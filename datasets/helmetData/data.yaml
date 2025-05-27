@@ -1,0 +1,12 @@
+#train: C:\Users\pc\Desktop\YOLOv8helmet\datasets\helmetData\train  # train images (relative to 'path') 128 images
+train:  C:\Users\25311\Desktop\YOLOv8helmet\datasets\helmetData
+#val: C:\Users\pc\Desktop\YOLOv8helmet\datasets\helmetData\valid  # val images (relative to 'path') 128 images
+val : C:\Users\25311\Desktop\YOLOv8helmet\datasets\helmetData
+#test: C:\Users\pc\Desktop\YOLOv8helmet\datasets\helmetData\test # val images (optional)
+test : C:\Users\25311\Desktop\YOLOv8helmet\datasets\helmetData
+
+# number of classes
+nc: 3
+
+# Classes
+names: ['helmet', 'without', 'two_wheeler']
