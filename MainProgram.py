@@ -17,6 +17,7 @@ from UIProgram.QssLoader import QSSLoader
 from UIProgram.precess_bar import ProgressBar
 import numpy as np
 import torch
+import os
 
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
@@ -83,7 +84,19 @@ class MainWindow(QMainWindow):
         self.ui.tableWidget.setAlternatingRowColors(True)  # 表格背景交替
 
         # 设置主页背景图片border-image: url(:/icons/ui_imgs/icons/camera.png)
-        # self.setStyleSheet("#MainWindow{background-image:url(:/bgs/ui_imgs/bg3.jpg)}")
+        # self.setStyleSheet("#MainWindow{background-image:url(:/icons/ui_imgs/ZMS.jpg)}")
+        # self.setStyleSheet("#MainWindow{background-image:url(:/bgs/ui_imgs/ZMS.jpg)}")
+
+        # base_path = "C:\\Users\\25311\Desktop\YOLOv8helmet"
+        # image_path = os.path.join(os.path.dirname(__file__), "UIProgram", "ui_imgs", "ZMS.jpg")
+        # self.setStyleSheet(f"#MainWindow{{background-image:url({image_path})}}")
+
+        base_path = "C:\\Users\\25311\\Desktop\\YOLOv8helmet"
+        image_path = os.path.join(base_path, "UIProgram", "ui_imgs", "ZMS.jpg")
+
+        # 转换为Qt可识别的URL格式
+        qt_path = image_path.replace("\\", "/")
+        self.setStyleSheet(f"#MainWindow{{background-image:url(file:///{qt_path})}}")
 
     def open_img(self):
         if self.cap:

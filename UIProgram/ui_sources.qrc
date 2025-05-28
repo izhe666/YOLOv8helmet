@@ -3,11 +3,15 @@
     <file>ui_imgs/icons/目标检测.png</file>
     <file>ui_imgs/icons/保存.png</file>
     <file>ui_imgs/icons/退出.png</file>
-    <file>ui_imgs/huoyan.png</file>
+<!--    <file>ui_imgs/huoyan.png</file>-->
     <file>ui_imgs/icons/camera.png</file>
     <file>ui_imgs/icons/folder.png</file>
     <file>ui_imgs/icons/img.png</file>
     <file>ui_imgs/icons/video.png</file>
+    <file>ui_imgs/ZMS.jpg</file> <!-- 添加背景 -->
   </qresource>
-  <qresource prefix="bgs"/>
+  <qresource prefix="bgs">
+    <file>ui_imgs/ZMS.jpg</file>
+  </qresource>
+
 </RCC>
