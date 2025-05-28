@@ -94,7 +94,7 @@ class MainWindow(QMainWindow):
         base_path = "C:\\Users\\25311\\Desktop\\YOLOv8helmet"
         image_path = os.path.join(base_path, "UIProgram", "ui_imgs", "ZMS.jpg")
 
-        # 转换为Qt可识别的URL格式
+        # 转换为Qt可识别的URL格式1
         qt_path = image_path.replace("\\", "/")
         self.setStyleSheet(f"#MainWindow{{background-image:url(file:///{qt_path})}}")
 
